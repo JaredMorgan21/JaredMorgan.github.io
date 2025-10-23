@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jared Morgan</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="header">
+    Jared Morgan
+    <button class="bannerButton" onclick="redirectToContact()">Contact</button>
+    <button class="bannerButton" onclick="redirectToResume()">Resume</button>
+    <button class="bannerButton" onclick="redirectToProjects()">Projects</button>
+    <button class="bannerButton" onclick="redirectToHome()">Home</button>
+</div>
+
+
+<table style="padding-top:20px; width:90%">
+
+    <!-- Thesis -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        Trajectory Optimization through Mixed-Integer Optimization of Contact Dynamics
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        My master's thesis. This work explores solving legged robot trajectories where the selection of end effector dynamics are optimizable.
+                        This problem lends itself well to mixed-integer optimization, an optimization framework that combines linear inputs and states such as forces and positions with integer or binary decisions such as contact or contact dynamics.
+                        This work presents a novel contribution to the world of legged robotics and increases their decision-making capacity.
+                        Submitted to ICRA 2026 and redacted until further notice.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <object class="pdf" style="height:80vh"
+                    data="ICRA_Mixed_Integer.pdf"
+                    width="560"
+                    height="100%">
+            </object></td>
+    </tr>
+
+    <!-- Slip detection-->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        PACE: Perception-aware Contact Estimation and Slip Detection through Dynamic Map Analysis
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        Work continued from my senior capstone. This work presents a novel framework for adjusting the weighting of sources of contact detection according to terrain information.
+                        Specialized for stairs, this work improved our ability to detect loss of contact around large discrete changes in height where accurate state estimation is highly important for recovery.
+                        Submitted to ICRA 2026 and redacted until further notice.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <object class="pdf" style="height:80vh"
+                    data="ICRA_Slipping.pdf"
+                    width="560"
+                    height="100%">
+            </object></td>
+    </tr>
+
+    <!-- MQP -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        Stair Climbing Quadruped
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        My senior capstone. Combining control theory (MPC, QP), 3d perception, state estimation (Kalman Filter, SLAM),
+                        contact estimation, and robot simulation, this whopper of a project represents the culmination of my robotics undergrad.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Pp7WCS7kTgM?si=f93wKkzMndN7iJD_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <!-- Hayward -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        Automated Testing and Sorting of PCBs
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        Automated the testing and sorting of PCBs using a UR5.
+                        I used ethernet to communicate between the central control software, the test software, and the UR5.
+                        Used sensors to catalogue PCBs, track their pass/fail in inventory, and make decisions concerning robot motion.
+                        Custom milled PCB grippers to allow arm tolerance by sliding PCBs into desired location.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <video width="560" height="338" controls>
+                <source src="Hayward%20UR5.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video></td>
+    </tr>
+
+    <!-- Drone LQR RBE 502-->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        Quadrotor Control to Intercept UAVs
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        This work represents the culmination of my first modern controls course.
+                        Here we linearized the dynamics of the highly nonlinear quadrotor and implemented a LQR solution with the addition of integral action.
+                        This allowed us to solve the problem of intercepting a UAV within a controlled airspace and bringing it back to home base while increasing efforts as the UAV resisted.
+                        The problem? Not all small-angle approximations are equally valid and the instability of linearizing cosine caused an imbalance in accepted forces in one direction.
+                        This project kicked off my love of modern controls and desire to research increasingly nonlinear problems.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <object class="pdf" style="height:80vh"
+                    data="RBE502Project.pdf"
+                    width="560"
+                    height="100%">
+            </object></td>
+    </tr>
+
+    <!-- 3001 Robot Arm -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        Robot Manipulator Control and Sorting
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        Sorted and tracked objects by color and shape using OpenCV.
+                        Converted detected pixels into real-world positions and generated trajectories with associated joint torques to allow a 3-dof robot arm to pick and place the objects.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <video width="560" height="315" controls>
+                <source src="3001Final.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video></td>
+    </tr>
+
+    <!-- 3002 Maze Exploration -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        Robot Maze Exploration
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        Using A*, SLAM, ROS, and controls we designed a software for a robot to map, explore, and navigate through a maze.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <iframe src="https://wpi0-my.sharepoint.com/personal/jmmorgan4_wpi_edu/_layouts/15/Doc.aspx?sourcedoc={9db74ad7-8990-44d8-89e7-f02b59586fe5}&amp;action=embedview" width="560" height="339" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> document, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        </td>
+    </tr>
+
+    <!-- WPI Affirmations Generator -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        WPI Affirmations Generator
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        8 months before the AI boom created by the release of ChatGPT, I employed Tensorflow to train a RNN-based NLG model to generate text based on a database of affirmations submitted to a popular meme page on campus.
+                        Combined with a pipeline for sourcing and editing images, I and the team I worked with created a program that automatically generated memes specific to our campus.
+                        I'm not saying OpenAI was inspired by this project, but I am saying GPT-4 was released afterwards.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kR6KwJAVnVA?si=Ej2f5liccvrqguHZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </td>
+    </tr>
+
+    <!-- Swarm Approximation -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        Large Object Approximation for Robot Swarms
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        Using simple controls principles and a lot of geometry, I developed a method for decentralized swarms to surround and collectively estimate the center of an object, represented here by a herd of sheep.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <iframe src="https://wpi0-my.sharepoint.com/personal/jmmorgan4_wpi_edu/_layouts/15/Doc.aspx?sourcedoc={36f69b52-bdd6-43ed-a036-9b96a4e0f5f5}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="560" height="339" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        </td>
+    </tr>
+
+    <!-- Drone RL -->
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td class="bigText">
+                        Reinforcement Learning for Aircraft Control
+                    </td>
+                </tr>
+                <tr>
+                    <td class="littleText">
+                        Completed as a final project for my reinforcement learning class, this project explores the use of DDPG and PPO for an aircraft control problem. The aircraft must exit a controlled airspace while navigating obstacles, avoiding other aircraft, and controlling its altitude.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <iframe src="https://wpi0-my.sharepoint.com/personal/jmmorgan4_wpi_edu/_layouts/15/Doc.aspx?sourcedoc={059b6a19-2470-40ef-a40e-8a37494cdd82}&amp;action=embedview&amp;wdAr=1.7777777777777777" width="560" height="339" frameborder="0">This is an embedded <a target="_blank" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+        </td>
+    </tr>
+</table>
+
+<script>
+    function redirectToHome() {
+        window.location.href = "index.html";
+    }
+    function redirectToProjects() {
+        window.location.href = "projects.html";
+    }
+    function redirectToResume() {
+        window.location.href = "resume.html";
+    }
+    function redirectToContact() {
+        window.location.href = "contact.html";
+    }
+</script>
+
+</body>
+
+</html>

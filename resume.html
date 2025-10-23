@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jared Morgan</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="header">
+    Jared Morgan
+    <button class="bannerButton" onclick="redirectToContact()">Contact</button>
+    <button class="bannerButton" onclick="redirectToResume()">Resume</button>
+    <button class="bannerButton" onclick="redirectToProjects()">Projects</button>
+    <button class="bannerButton" onclick="redirectToHome()">Home</button>
+</div>
+
+
+<object class="image" style="width:60%; padding-left:20%; padding-right:20%; height:80vh;"
+        data="Jared_Morgan_CV.pdf">
+</object></td>
+
+<script>
+    function redirectToHome() {
+        window.location.href = "index.html";
+    }
+    function redirectToProjects() {
+        window.location.href = "projects.html";
+    }
+    function redirectToResume() {
+        window.location.href = "resume.html";
+    }
+    function redirectToContact() {
+        window.location.href = "contact.html";
+    }
+</script>
+
+</body>
+
+</html>

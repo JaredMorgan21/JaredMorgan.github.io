@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jared Morgan</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="header">
+    Jared Morgan
+    <button class="bannerButton" onclick="redirectToContact()">Contact</button>
+    <button class="bannerButton" onclick="redirectToResume()">Resume</button>
+    <button class="bannerButton" onclick="redirectToProjects()">Projects</button>
+    <button class="bannerButton" onclick="redirectToHome()">Home</button>
+</div>
+
+<div class="bigText">
+    Contact Me
+</div>
+<div class="littleText" style="text-align:center;">
+    <p><a href="mailto:jmmorgan1007@gmail.com">jmmorgan1007@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/jared-morgan-618486222">Linkedin</a></p>
+
+</div>
+
+<script>
+    function redirectToHome() {
+        window.location.href = "index.html";
+    }
+    function redirectToProjects() {
+        window.location.href = "projects.html";
+    }
+    function redirectToResume() {
+        window.location.href = "resume.html";
+    }
+    function redirectToContact() {
+        window.location.href = "contact.html";
+    }
+</script>
+
+</body>
+
+</html>

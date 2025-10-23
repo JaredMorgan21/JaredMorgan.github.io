@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jared Morgan</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+<div class="header">
+    Jared Morgan
+    <button class="bannerButton" onclick="redirectToContact()">Contact</button>
+    <button class="bannerButton" onclick="redirectToResume()">Resume</button>
+    <button class="bannerButton" onclick="redirectToProjects()">Projects</button>
+    <button class="bannerButton" onclick="redirectToHome()">Home</button>
+</div>
+
+<div class="littleText" style="width:80%; padding-left:10%; padding-right:10%;">
+    <div class="bigText">
+        About
+    </div>
+
+    <div class="text">
+        Hello! I'm Jared Morgan, a robotics engineering B.S./M.S. graduate from Worcester Polytechnic Institute (WPI).
+        I am passionate about optimal control, state estimation, and perception for autonomous systems.
+        In research, I’ve co-authored papers submitted to ICRA 2026, exploring mixed-integer contact and trajectory optimization and perception-aware slip/contact estimation for legged robots.
+        My other projects cover reinforcement learning for drone navigation, classical control for aerial and wheeled vehicles, maze navigation using SLAM, mechanical design, computer vision for gesture and object recognition tasks, networking, and web and app development (📌you are here).
+    </div>
+
+
+    <div>
+        <img src="JaredMorgan.jpg" alt="Myself" class="image" style="height:20vw; padding-left:10vw; padding-top:20px">
+    </div>
+    <div>
+        <img src="stair-climbing-outside-unity.png" alt="Robot Dog" class="image" style="float: right; height:20vw; padding-right:10vw; padding-top:20px">
+    </div>
+
+    <div class="text">
+        Outside of work, I enjoy the outdoors and regularly take time to go hiking, skating, or fishing. I love cooking and making food from unfamiliar cultures and with new ingredients or techniques.
+    </div>
+
+    <div>
+        <img src="schnitzel.jpg" alt="Schnitzel" class="image" style="height:25vw; padding-left:10vw; padding-top:20px">
+    </div>
+    <div>
+        <img src="fish.jpg" alt="Fish" class="image" style="float: right; height:25vw; padding-right:10vw; padding-top:20px">
+    </div>
+
+</div>
+
+<script>
+    function redirectToHome() {
+        window.location.href = "index.html";
+    }
+    function redirectToProjects() {
+        window.location.href = "projects.html";
+    }
+    function redirectToResume() {
+        window.location.href = "resume.html";
+    }
+    function redirectToContact() {
+        window.location.href = "contact.html";
+    }
+</script>
+
+</body>
+
+</html>
